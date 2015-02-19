@@ -2,12 +2,12 @@
 using Quintsys.Web.ThemeableRazorViewEngine.MVC5;
 
 namespace $rootnamespace$.App_Start {
-    public static class ViewEnginesConfig
+    public static class ThemeableViewEngineConfig
     {
         public static void RegisterViewEngines(ViewEngineCollection engines, params string[] fileExtensions )
         {
             engines.Clear();
-            engines.Add(new ThemeRazorViewEngine(fileExtensions));
+            engines.Add(new ThemeableRazorViewEngine(fileExtensions));
         }
     }
 }

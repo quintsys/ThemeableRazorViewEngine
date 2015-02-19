@@ -1,7 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-
-<configuration>
-  <appSettings>
-    <add key="Theme" xdt:Transform="Remove" xdt:Locator="Match(key)" />
-  </appSettings>
-</configuration>

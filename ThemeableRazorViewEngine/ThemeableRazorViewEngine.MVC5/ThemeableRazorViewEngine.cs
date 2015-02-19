@@ -9,22 +9,22 @@ namespace Quintsys.Web.ThemeableRazorViewEngine.MVC5
     ///     Caching is allowed since the structure of the FinApp project allows for only one Theme by stack.
     ///     Currently supports C# only. Removed VB.NET support to increase perfomance on lookups.
     /// </summary>
-    public class ThemeRazorViewEngine : RazorViewEngine
+    public class ThemeableRazorViewEngine : RazorViewEngine
     {
         #region private members and ctor
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="ThemeRazorViewEngine" /> class.
+        ///     Initializes a new instance of the <see cref="ThemeableRazorViewEngine" /> class.
         /// </summary>
-        public ThemeRazorViewEngine()
+        public ThemeableRazorViewEngine()
             : this(new[] { "cshtml", "vbhtml" })
         {
         }
 
         /// <summary>
-        ///     Initializes a new instance of the <see cref="ThemeRazorViewEngine" /> class.
+        ///     Initializes a new instance of the <see cref="ThemeableRazorViewEngine" /> class.
         /// </summary>
-        public ThemeRazorViewEngine(params string[] fileExtensions)
+        public ThemeableRazorViewEngine(params string[] fileExtensions)
         {
             if (fileExtensions == null)
                 throw new ArgumentNullException("fileExtensions");

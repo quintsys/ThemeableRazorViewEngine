@@ -62,13 +62,11 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
-    <None Include="nuget\content\App_Start\ViewEnginesConfig.cs.pp" />
+    <None Include="nuget\content\App_Start\ThemeableViewEngineConfig.cs.pp" />
     <Compile Include="ThemeController.cs" />
     <Compile Include="Theme.cs" />
-    <Compile Include="ThemeRazorViewEngine.cs" />
+    <Compile Include="ThemeableRazorViewEngine.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <None Include="nuget\content\web.config.uninstall.xdt" />
-    <None Include="nuget\content\web.config.install.xdt" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
