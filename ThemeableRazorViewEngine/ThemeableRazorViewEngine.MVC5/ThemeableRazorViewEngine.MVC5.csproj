@@ -40,6 +40,7 @@
   <ItemGroup>
     <None Include="nuget\content\App_Start\ThemeableViewEngineConfig.cs.pp" />
     <Compile Include="Properties\Annotations.cs" />
+    <Compile Include="ThemeVirtualPaths.cs" />
     <Compile Include="UrlHelperExtensions.cs" />
     <Compile Include="ThemeController.cs" />
     <Compile Include="Theme.cs" />
