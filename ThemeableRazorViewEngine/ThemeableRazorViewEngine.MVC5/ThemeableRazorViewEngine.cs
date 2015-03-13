@@ -2,7 +2,7 @@
 using System.Linq;
 using System.Web.Mvc;
 
-namespace Quintsys.Web.ThemeableRazorViewEngine.MVC5
+namespace Quintsys.Web.ThemeableRazorViewEngine
 {
     /// <summary>
     ///     Razor view engine with themes support.

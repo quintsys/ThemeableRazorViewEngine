@@ -7,8 +7,8 @@
     <ProjectGuid>{1E3FAB0E-5227-4D35-99B0-ED567BD2E92C}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Quintsys.Web.ThemeableRazorViewEngine.MVC5</RootNamespace>
-    <AssemblyName>ThemeableRazorViewEngine.MVC5</AssemblyName>
+    <RootNamespace>Quintsys.Web.ThemeableRazorViewEngine</RootNamespace>
+    <AssemblyName>Quintsys.Web.ThemeableRazorViewEngine</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>

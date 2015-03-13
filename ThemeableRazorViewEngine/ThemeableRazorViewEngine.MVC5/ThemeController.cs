@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace Quintsys.Web.ThemeableRazorViewEngine.MVC5
+namespace Quintsys.Web.ThemeableRazorViewEngine
 {
     public abstract class ThemeController : Controller
     {
