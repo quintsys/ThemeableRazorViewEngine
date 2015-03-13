@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
-using Quintsys.Web.ThemeableRazorViewEngine.MVC5;
+using Quintsys.Web.ThemeableRazorViewEngine;
 
-namespace $rootnamespace$.App_Start {
+namespace $rootnamespace$ {
     public static class ThemeableViewEngineConfig
     {
         public static void RegisterViewEngines(ViewEngineCollection engines, params string[] fileExtensions )
