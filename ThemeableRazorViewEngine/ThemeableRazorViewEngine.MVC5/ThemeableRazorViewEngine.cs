@@ -1,6 +1,6 @@
-﻿using System;
-using System.Linq;
+﻿using System.Linq;
 using System.Web.Mvc;
+using Quintsys.Web.ThemeableRazorViewEngine.Annotations;
 
 namespace Quintsys.Web.ThemeableRazorViewEngine
 {
@@ -9,15 +9,14 @@ namespace Quintsys.Web.ThemeableRazorViewEngine
     ///     Caching is allowed since the structure of the FinApp project allows for only one Theme by stack.
     ///     Currently supports C# only. Removed VB.NET support to increase perfomance on lookups.
     /// </summary>
+    [UsedImplicitly]
     public class ThemeableRazorViewEngine : RazorViewEngine
-    {
-        #region private members and ctor
-
+    {        
         /// <summary>
         ///     Initializes a new instance of the <see cref="ThemeableRazorViewEngine" /> class.
         /// </summary>
         public ThemeableRazorViewEngine()
-            : this(new[] { "cshtml", "vbhtml" })
+            : this(new[] {"cshtml", "vbhtml"})
         {
         }
 
@@ -26,9 +25,6 @@ namespace Quintsys.Web.ThemeableRazorViewEngine
         /// </summary>
         public ThemeableRazorViewEngine(params string[] fileExtensions)
         {
-            if (fileExtensions == null)
-                throw new ArgumentNullException("fileExtensions");
-
             FileExtensions = fileExtensions;
 
             string[] areaLocationFormats = CreateLocationFormats(LocationType.Area);
@@ -79,8 +75,6 @@ namespace Quintsys.Web.ThemeableRazorViewEngine
             Area
         }
 
-        #endregion
-
         /// <summary>
         ///     Creates a partial view using the specified controller context and partial path, including the Theme name.
         /// </summary>
@@ -126,7 +120,7 @@ namespace Quintsys.Web.ThemeableRazorViewEngine
         }
 
         #endregion
-
+        
         protected override bool FileExists(ControllerContext controllerContext, string virtualPath)
         {
             using (var themeController = controllerContext.Controller as ThemeController)
